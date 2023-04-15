@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: 
+  "h h"
+  "n c";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  grid-area: h;
+  background-color: green;
+}
+.header img {
+  height: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  grid-area: n;
+  background-color: greenyellow;
+}
+
+.content {  
+  background-color: blue;
+  grid-area: c;
+  padding: 10px;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  
+}
+
+.user-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 30px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 150px;
+  height: 150px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.posts-section {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.posts-section input {
+  width: 100%;
+  height: 60px;
+}
+.green-btn {
+  background-color: greenyellow;
+  border: 0px;
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+}
+.green-btn:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.posts-section .green-btn {
+  align-self: flex-end;
 }
