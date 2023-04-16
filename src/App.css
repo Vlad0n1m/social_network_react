@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .app-wrapper {
@@ -9,8 +10,14 @@
   display: grid;
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
-  grid-template-areas: 
-  "h h"
-  "n c";
+  grid-template-areas:
+    "h h"
+    "n c";
   gap: 10px;
+}
+
+.app-content-wrapper {
+  background-color: rgb(138, 207, 207);
+  grid-area: c;
+  padding: 10px;
 }
