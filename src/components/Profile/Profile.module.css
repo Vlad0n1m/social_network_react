@@ -1,0 +1,59 @@
+.content {
+    background-color: blue;
+    grid-area: c;
+    padding: 10px;
+}
+
+.all_posts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;   
+    gap: 10px;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.posts {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.posts input {
+    width: 100%;
+    height: 60px;
+}
+
+.posts .btn {
+    background-color: greenyellow;
+    border: 0px;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    align-self: flex-end;
+}
+
+.posts .btn:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+    cursor: pointer;
+}
